@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Self Made Financial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f3f4f6;
+      color: #1b2e44;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+    header {
+      background: #caa72c;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      height: 60px;
+      max-width: 100%;
+    }
+    .hero {
+      background: 
+        linear-gradient(to right, rgba(240, 244, 248, 0.9), rgba(223, 239, 255, 0.9)),
+        url('https://images.unsplash.com/photo-1605902711622-cfb43c44367f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      color: #0b5e52;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #3b4c5f;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .product-tile {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product-tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .product-tile img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .product-tile h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #264a77;
+    }
+    .product-tile p {
+      font-size: 0.95rem;
+      color: #3b4c5f;
+      margin-bottom: 1rem;
+    }
+    .product-tile a {
+      text-decoration: none;
+      color: white;
+      background: #0b5e52;
+      padding: 0.75rem;
+      border-radius: 6px;
+      font-weight: bold;
+      display: block;
+      transition: background 0.3s ease;
+    }
+    .product-tile a:hover {
+      background: #08473e;
+    }
+    .badge {
+      background: #caa72c;
+      color: white;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.8rem;
+      padding: 1.5rem;
+      background: #e0e0e0;
+      margin-top: 2rem;
+      border-top: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 1.6rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .product-tile h3 {
+        font-size: 1.1rem;
+      }
+      .product-tile p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/selfmadefinancial logo.png" alt="Self Made Financial logo">
+  </header>
+
+  <section class="hero">
+    <h1>Take Control of Your Financial Future</h1>
+    <p>Explore a curated list of financial products — from short-term loans to credit monitoring tools. Choose the option that best suits your needs.</p>
+  </section>
+
+  <section class="products">
+    <div class="product-tile">
+      <img src="images/brighterloans.png" alt="Brighter Loans">
+      <h3>Brighter Loans</h3>
+      <p>Fast approval short-term loans to cover your immediate financial needs.</p>
+      <a href="https://brighter.loans?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/247loanexpress.png" alt="247LoanExpress">
+      <h3>247 Loan Express</h3>
+      <p>Access cash anytime with 24/7 loan approval and transfer options.</p>
+      <a href="https://www.247loanexpress.com?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/eaglecashloans.png" alt="EagleCashLoans">
+      <h3>Eagle Cash Loans</h3>
+      <pecure a loan with no hassle — flexible terms and quick response.</p>
+      <a href="https://www.eaglecashloans.com?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/247creditloan" alt="247CreditLoan">
+      <h3>247 Credit Loan</h3>
+      <p>Improve your credit profile while getting financial support when needed.</p>
+      <a href="https://www.247creditloan.com?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/expressfundsonline.png" alt="ExpressFundsOnline">
+      <h3>Express Funds Online</h3>
+      <p>Instant funds direct to your account in just a few steps. No waiting.</p>
+      <a href="https://www.expressfundsonline.com?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/turbomoney.png" alt="TurboMoney">
+      <h3>Turbo Money</h3>
+      <p>Speed up your cash flow with quick lending options from TurboMoney.</p>
+      <a href="https://www.turbomoney.co?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/fundsforyou.png" alt="Funds For You">
+      <h3>Funds For You</h3>
+      <p>Flexible lending solutions designed for your lifestyle and goals.</p>
+      <a href="https://www.funds-for-you.com?aff=SMF001">Apply Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="images/trustyloans" alt="Trusty Loans">
+      <h3>Trusty Loans</h3>
+      <p>Loans you can count on — built on trust and financial responsibility.</p>
+      <a href="https://www.trusty-loans.com?aff=SMF001">Apply Now</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Disclaimer: Self Made Financial is an affiliate site. We receive compensation from the providers listed when you click on the links and apply. This does not affect your eligibility or increase your costs to use the services.</p>
+  </footer>
+</body>
+</html>
